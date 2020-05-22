@@ -15,5 +15,6 @@
         <br>
         <hr>
     @endforeach
+    <p>Excelente día Saludos!.</p>
 </body>
 </html>
