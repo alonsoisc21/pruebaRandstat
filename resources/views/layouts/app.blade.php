@@ -49,6 +49,21 @@
                                 </li>
                             @endif
                         @else
+                            <!--li class="nav-item">
+                                <a class="nav-link" href="{{ url('/home') }}">{{ __('Inicio') }}</a>
+                            </li-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/home') }}">{{ __('Todas Las Tarea') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/home') }}">{{ __('Enviar') }}</a>
+                            </li>
+                            <!--ul class="list-group list-group-horizontal">
+                                <li class="list-group-item">Inicio</li>
+                                <li class="list-group-item">Enviar</li>
+                                <li class="list-group-item">Todas las tareas</li>
+                                    
+                            </ul-->
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -75,6 +90,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+    </div>  
+    @yield('scripts')
 </body>
 </html>
