@@ -18,9 +18,9 @@
 
                     @foreach ($tareasP as $element)
                         <div clas="row col-12">
-                            <div class="col-8">{{$element['id']}}</div>
+                            <!--div class="col-8">{{$element['id']}}</div-->
                             <div class="col-8">{{$element['descripcion']}}</div>
-                            <div class="col-4" onclick="actualizar('{!! $element['id'] !!}')" style="cursor:pointer">Actualizar</div>
+                            <div class="col-4" onclick="actualizar('{!! $element['id'] !!}')" style="cursor:pointer">Concluida</div>
                         </div>
                         <br>
                         <hr>
