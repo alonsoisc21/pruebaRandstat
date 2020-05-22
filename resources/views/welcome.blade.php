@@ -69,7 +69,7 @@
                 <div class="top-right links">
                     @auth
                         <a class="nav-link" href="{{ url('/home') }}">{{ __('Todas Las Tarea') }}</a>
-                        <a class="nav-link" href="{{ url('/home') }}">{{ __('Enviar') }}</a>
+                        <a class="nav-link" href="{{ url('/enviarCorreo') }}">{{ __('Enviar') }}</a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">

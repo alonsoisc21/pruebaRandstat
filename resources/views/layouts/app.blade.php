@@ -56,7 +56,7 @@
                                 <a class="nav-link" href="{{ url('/home') }}">{{ __('Todas Las Tarea') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/home') }}">{{ __('Enviar') }}</a>
+                                <a class="nav-link" href="{{ url('/enviarCorreo') }}">{{ __('Enviar Tareas') }}</a>
                             </li>
                             <!--ul class="list-group list-group-horizontal">
                                 <li class="list-group-item">Inicio</li>

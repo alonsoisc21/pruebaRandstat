@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\tareasPendientes;
 use Validator;
 use Redirect;
 use Session;
@@ -53,6 +55,11 @@ class HomeController extends Controller
         $tareaA->save();
         return ("Actualizado");
     }
-
+    public function enviarCorreo(){
+        $tareasP = Tarea::lstareas('Pendiente');
+        $usuarios = User::lscorreo();
+        Mail::to($usuarios)->send(new tareasPendientes($tareasP));
+        return redirect()->intended('/home');
+    }
    
 }

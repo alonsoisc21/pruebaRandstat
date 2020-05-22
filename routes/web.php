@@ -21,4 +21,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/agregarTarea', 'HomeController@agregarTarea');
 Route::post('/registrarTarea', 'HomeController@registrarTarea');
-Route::post('/actualizaTarea', 'HomeController@actualizarTarea');	
+Route::post('/actualizaTarea', 'HomeController@actualizarTarea');
+Route::get('/enviarCorreo','HomeController@enviarCorreo');
